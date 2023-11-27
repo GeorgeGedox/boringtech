@@ -6,7 +6,7 @@
     "dev": "npm-run-all --parallel hugo:server tailwind:watch --print-name --race",
     "build": "npm run tailwind:build && npm run hugo:build",
     "hugo:server": "hugo server -b http://localhost -p 8000",
-    "hugo:build": "hugo",
+    "hugo:build": "hugo --gc --minify",
     "tailwind:watch": "NODE_ENV=development ./themes/blowfish/node_modules/tailwindcss/lib/cli.js -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
     "tailwind:build": "NODE_ENV=production ./themes/blowfish/node_modules/tailwindcss/lib/cli.js -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit",
     "postinstall": "cd themes/blowfish && npm install"

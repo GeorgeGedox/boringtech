@@ -28,6 +28,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   updateMeta();
   this.updateLogo?.(getTargetAppearance());
+  {{ if .Params.showComments | default (.Site.Params.article.showComments | default false) }}
+  changeGiscusTheme();
+  {{ end }}
 
   if (switcher) {
     switcher.addEventListener("click", () => {
@@ -39,6 +42,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
       );
       updateMeta();
       this.updateLogo?.(targetAppearance);
+      {{ if .Params.showComments | default (.Site.Params.article.showComments | default false) }}
+      changeGiscusTheme();
+      {{ end }}
     });
     switcher.addEventListener("contextmenu", (event) => {
       event.preventDefault();
@@ -55,6 +61,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
       );
       updateMeta();
       this.updateLogo?.(targetAppearance);
+      {{ if .Params.showComments | default (.Site.Params.article.showComments | default false) }}
+      changeGiscusTheme();
+      {{ end }}
     });
     switcherMobile.addEventListener("contextmenu", (event) => {
       event.preventDefault();
@@ -101,3 +110,21 @@ window.addEventListener("DOMContentLoaded", (event) => {
     scroller.hidden = true;
   }
 });
+
+{{ if .Params.showComments | default (.Site.Params.article.showComments | default false) }}
+function changeGiscusTheme() {
+  const theme = document.documentElement.classList.contains("dark") ? "{{ .Site.Params.comments.theme_dark }}" : "{{ .Site.Params.comments.theme_light }}"
+
+  function sendMessage(message) {
+    const iframe = document.querySelector('iframe.giscus-frame');
+    if (!iframe) return;
+    iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+  }
+
+  sendMessage({
+    setConfig: {
+      theme: theme
+    }
+  });
+}
+{{ end }}

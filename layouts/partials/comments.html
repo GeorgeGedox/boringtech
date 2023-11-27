@@ -1,0 +1,28 @@
+{{ if (in .Site.Params.mainSections .Type)}}
+<script>
+  let giscusTheme = document.documentElement.classList.contains("dark") ? "{{ .Site.Params.comments.theme_dark }}" : "{{ .Site.Params.comments.theme_light }}"
+  let giscusAttributes = {
+    "src": "https://giscus.app/client.js",
+    "data-repo": "{{ .Site.Params.comments.repo }}",
+    "data-repo-id": "{{ .Site.Params.comments.repoId }}",
+    "data-category": "{{ .Site.Params.comments.category }}",
+    "data-category-id": "{{ .Site.Params.comments.categoryId }}",
+    "data-mapping": "{{ .Site.Params.comments.mapping }}",
+    "data-reactions-enabled": "1",
+    "data-strict": "1",
+    "data-emit-metadata": "0",
+    "data-input-position": "top",
+    "data-theme": giscusTheme,
+    "data-lang": "en",
+    "data-loading": "lazy",
+    "crossorigin": "anonymous",
+    "async": "",
+  };
+
+  let giscusScript = document.createElement("script");
+  Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+  document.body.appendChild(giscusScript);
+</script>
+
+<div class="giscus"></div>
+{{ end }}

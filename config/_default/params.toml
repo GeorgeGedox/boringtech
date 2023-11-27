@@ -23,6 +23,15 @@ highlightCurrentMenuArea = true
 smartTOC = true
 # smartTOCHideUnfocusedChildren = true
 
+[comments]
+  repo = "GeorgeGedox/boringtech"
+  repoId = "R_kgDOKyZgmA"
+  category = "Website Comments"
+  categoryId = "DIC_kwDOKyZgmM4CbSrO"
+  mapping = "og:title"
+  theme_dark = "dark_dimmed"
+  theme_light = "light"
+
 [header]
   layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
 
@@ -71,6 +80,7 @@ smartTOC = true
   showAuthorsBadges = false
   showWordCount = true
   # sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
+  showComments = true
 
 [list]
   showHero = true

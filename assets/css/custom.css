@@ -10,6 +10,10 @@
   margin-top: 1.4rem;
 }
 
+.giscus, .giscus-frame {
+  width: 99.99%;
+}
+
 .prose {
   --tw-prose-body: rgba(var(--color-neutral-700), 1);
   --tw-prose-headings: rgba(var(--color-neutral-800), 1);

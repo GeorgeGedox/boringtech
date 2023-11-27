@@ -1,0 +1,73 @@
+.main-menu nav p.text-base {
+  font-size: 1.25rem;
+}
+
+.main-menu #menu-wrapper li > a > p {
+  font-size: 1.6rem;
+}
+
+.main-menu #menu-wrapper li.mt-1 {
+  margin-top: 1.4rem;
+}
+
+.prose {
+  --tw-prose-body: rgba(var(--color-neutral-700), 1);
+  --tw-prose-headings: rgba(var(--color-neutral-800), 1);
+  --tw-prose-lead: rgba(var(--color-neutral-500), 1);
+  --tw-prose-links: rgba(var(--color-primary-600), 1);
+  --tw-prose-bold: rgba(var(--color-neutral-900), 1);
+  --tw-prose-counters: rgba(var(--color-neutral-800), 1);
+  --tw-prose-bullets: rgba(var(--color-neutral-500), 1);
+  --tw-prose-hr: rgba(var(--color-neutral-200), 1);
+  --tw-prose-quotes: rgba(var(--color-neutral-700), 1);
+  --tw-prose-quote-borders: rgba(var(--color-primary-200), 1);
+  --tw-prose-captions: rgba(var(--color-neutral-500), 1);
+  --tw-prose-kbd: #111827;
+  --tw-prose-kbd-shadows: 17 24 39;
+  --tw-prose-code: rgba(var(--color-secondary-700), 1);
+  --tw-prose-pre-code: rgba(var(--color-neutral-700), 1);
+  --tw-prose-pre-bg: rgba(var(--color-neutral-50), 1);
+  --tw-prose-th-borders: rgba(var(--color-neutral-500), 1);
+  --tw-prose-td-borders: rgba(var(--color-neutral-300), 1);
+  --tw-prose-invert-body: rgba(var(--color-neutral-100), 1);
+  --tw-prose-invert-headings: rgba(var(--color-neutral-50), 1);
+  --tw-prose-invert-lead: rgba(var(--color-neutral-500), 1);
+  --tw-prose-invert-links: rgba(var(--color-primary-400), 1);
+  --tw-prose-invert-bold: rgba(var(--color-neutral), 1);
+  --tw-prose-invert-counters: rgba(var(--color-neutral-400), 1);
+  --tw-prose-invert-bullets: rgba(var(--color-neutral-600), 1);
+  --tw-prose-invert-hr: rgba(var(--color-neutral-500), 1);
+  --tw-prose-invert-quotes: rgba(var(--color-neutral-200), 1);
+  --tw-prose-invert-quote-borders: rgba(var(--color-primary-700), 1);
+  --tw-prose-invert-captions: rgba(var(--color-neutral-400), 1);
+  --tw-prose-invert-kbd: #fff;
+  --tw-prose-invert-kbd-shadows: 255 255 255;
+  --tw-prose-invert-code: rgba(var(--color-secondary-400), 1);
+  --tw-prose-invert-pre-code: rgba(var(--color-neutral-200), 1);
+  --tw-prose-invert-pre-bg: rgba(var(--color-neutral-700), 1);
+  --tw-prose-invert-th-borders: rgba(var(--color-neutral-500), 1);
+  --tw-prose-invert-td-borders: rgba(var(--color-neutral-700), 1);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+:is(.dark .dark\:prose-invert) {
+  --tw-prose-body: var(--tw-prose-invert-body);
+  --tw-prose-headings: var(--tw-prose-invert-headings);
+  --tw-prose-lead: var(--tw-prose-invert-lead);
+  --tw-prose-links: var(--tw-prose-invert-links);
+  --tw-prose-bold: var(--tw-prose-invert-bold);
+  --tw-prose-counters: var(--tw-prose-invert-counters);
+  --tw-prose-bullets: var(--tw-prose-invert-bullets);
+  --tw-prose-hr: var(--tw-prose-invert-hr);
+  --tw-prose-quotes: var(--tw-prose-invert-quotes);
+  --tw-prose-quote-borders: var(--tw-prose-invert-quote-borders);
+  --tw-prose-captions: var(--tw-prose-invert-captions);
+  --tw-prose-kbd: var(--tw-prose-invert-kbd);
+  --tw-prose-kbd-shadows: var(--tw-prose-invert-kbd-shadows);
+  --tw-prose-code: var(--tw-prose-invert-code);
+  --tw-prose-pre-code: var(--tw-prose-invert-pre-code);
+  --tw-prose-pre-bg: var(--tw-prose-invert-pre-bg);
+  --tw-prose-th-borders: var(--tw-prose-invert-th-borders);
+  --tw-prose-td-borders: var(--tw-prose-invert-td-borders);
+}

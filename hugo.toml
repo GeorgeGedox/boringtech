@@ -1,0 +1,4 @@
+theme = "blowfish"
+baseURL = 'https://boringtech.net/'
+languageCode = 'en'
+title = 'BoringTech'

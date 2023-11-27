@@ -1,0 +1,24 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  logo = "img/logo.png"
+  secondaryLogo = "img/logo_inverted.png"
+  description = "My awesome website"
+  copyright = "&copy; boringtech.net | This website does NOT use any cookies for tracking."
+
+[author]
+  name = "George V."
+  image = "img/avatar.jpg"
+  # headline = ""
+  bio = "Sr. DevOps Engineer @ Deloitte Digital Romania"
+  links = [
+    { dribbble = "https://dribbble.com/GeorgeGedox" },
+    { github = "https://github.com/GeorgeGedox" },
+    { linkedin = "https://www.linkedin.com/in/georgegedox/" },
+  ]

@@ -2,7 +2,7 @@
 title: "Create Proxmox cloud-init templates"
 date: 2023-02-25
 summary: Create a customized cloud-init ready, Proxmox template with qemu-guest-agent preinstalled
-tags: ['linux', 'selfhosted']
+tags: ['linux', 'selfhosted', 'proxmox']
 ---
 
 I needed to create a few VMs using [Terraform](https://www.terraform.io/) in Proxmox but having to go through each server and do the first-time setup was annoying, so instead of doing that, I learned how to create cloud-init enabled templates and now I'll share my findings with you.

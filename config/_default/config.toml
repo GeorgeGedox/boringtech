@@ -21,7 +21,7 @@ buildFuture = false
 
 [permalinks]
   [permalinks.page]
-    posts = '/blog/:slug/'
+    blog = '/blog/:title/'
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

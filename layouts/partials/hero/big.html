@@ -1,0 +1,24 @@
+{{ $disableImageOptimization := .Page.Site.Params.disableImageOptimization | default false }}
+
+{{- $images := .Resources.ByType "image" -}}
+{{- $featured := $images.GetMatch "*feature*" -}}
+{{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+{{- $alt := .Page.Title -}}
+{{- with .Page.Params.alt }}{{ $alt = . }}{{ end -}}
+{{- $featuredCredits := .Params.featuredCredits | default false -}}
+{{- with $featured -}}
+    <div class="featured-image relative">
+    {{ if $disableImageOptimization }}
+        {{ with . }}
+        <img class="w-full rounded-lg single_hero_round nozoom" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
+        {{ end }}
+    {{ else }}
+        {{ with .Resize "1200x" }}
+        <img class="w-full rounded-lg single_hero_round nozoom" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
+        {{ end }}
+    {{ end }}
+    {{ if $featuredCredits }}
+    <span class="absolute bottom-0 right-0 py-1 px-2 rounded-tl-lg bg-neutral-800/40 text-xs text-neutral-100 backdrop-blur-xl">Photo credit: {{ $featuredCredits |safeHTML }}</span>
+    {{ end }}
+  </div>
+{{- end -}}

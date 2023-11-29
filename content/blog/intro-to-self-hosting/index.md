@@ -4,6 +4,8 @@ date: 2021-12-12
 summary: You want to get into self-hosting but don't know what that involves? This is the perfect place to start.
 image: ./featured.jpg
 tags: ['linux', 'selfhosted', 'hardware', 'software']
+featuredCredits: '<a href="https://unsplash.com/@jeffloucks" target="_blank">Jeff Loucks</a>'
+url: 'blog/intro-to-self-hosting-how-to-get-started-hosting-your-applications'
 ---
 
 This article will cover a rather small part of what you need to know before going out and buying hardware to build your own lab, but it should be enough to at least know what self-hosting your own stuff is a thing you want to do.

@@ -30,7 +30,7 @@ cp /etc/pve/corosync.conf /etc/pve/corosync.new.conf
 
 Now change the `quorum_votes` value to 2 for the node you want to be able to still work on it's own.
 
-{{< highlight html "linenos=table,hl_lines=11" >}}
+{{< highlight bash "linenos=table,hl_lines=11" >}}
 nodelist {
   node {
     name: delta
@@ -49,7 +49,7 @@ nodelist {
 
 Once that's done, also increase the `config_version` value in order to trigger a sync instantly to all nodes.
 
-{{< highlight html "linenos=table,hl_lines=3" >}}
+{{< highlight bash "linenos=table,hl_lines=3" >}}
 totem {
   cluster_name: homelab
   config_version: 5

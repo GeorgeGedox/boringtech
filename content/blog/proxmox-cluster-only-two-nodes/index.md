@@ -2,7 +2,7 @@
 title: "Clustering Proxmox with only 2 nodes"
 date: 2023-11-29
 summary: How to setup a Proxmox cluster running with only 2 nodes
-tags: ['linux', 'selfhosted', 'proxmox']
+tags: ['linux', 'selfhosted', 'proxmox', 'guides']
 featuredCredits: '<a href="https://unsplash.com/@jainath" target="_blank">Jainath Ponnala</a>'
 ---
 
